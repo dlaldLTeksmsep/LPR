@@ -1,0 +1,100 @@
+
+.check_btn{
+
+  margin-top:-8%;
+  margin-right:15px;
+  font-family: "NanumBarunGothic",serif; 
+  background-color: #BFBEBE;
+  border-radius: 5px;
+  color:#FFFFFF;
+  outline:0;
+  border:0;
+  width:7%;
+  height:40px;
+  font-size: 15px;
+  font-weight: lighter;
+  float: right;
+
+}
+.check_btn:hover{
+
+ 
+  background-color: #18A0FB;
+}
+
+.check_btn1{
+
+  margin-top: -5%;
+  margin-right:15px;
+  font-family: "NanumBarunGothic",serif; 
+  background-color: #BFBEBE;
+  border-radius: 5px;
+  color:#FFFFFF;
+  outline:0;
+  border:0;
+  width:7%;
+  height:40px;
+  font-size: 15px;
+  font-weight: lighter;
+  float: right;
+
+}
+.check_btn1:hover{
+
+ 
+  background-color: #18A0FB;
+}
+
+th{
+    
+  font-weight: 400;
+  height: 30px;
+
+
+}
+h1 {
+
+  text-align: center;
+  font-family: "NanumBarunGothic",serif;
+  font-size:35px;
+  font-weight: 300;
+  margin-top:5%;
+  
+}
+
+table {
+    
+  margin-left:30%;
+  font-family: "NanumBarunGothic",serif; 
+  font-weight: lighter;
+  width:40%;
+  height: 130px;
+  margin-top:5%;
+  
+}
+td {
+  text-align: center;
+}
+
+.del{
+  height: 30px;
+  width:30%;
+  font-family: "NanumBarunGothic",serif; 
+  background-color: #FF4D4D;
+  border-radius: 3px;
+  border:0;
+  outline:0;
+  color: #FFFFFF;
+}
+.edit{
+  
+  height: 30px;
+  width:30%;
+  font-family: "NanumBarunGothic",serif; 
+  background-color: #E4E4E4;
+  border-radius: 3px;
+  border:0;
+  outline:0;
+  color: #FFFFFF;
+}
+
