@@ -3,11 +3,23 @@
   <head>
     <title>LPR</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
-    <h1>등록된 차량</h1>
-    <input class="check_btn" type="button" value="차량 등록하기" onclick="javascript:location.href='/newMemo'">
-    <input class="check_btn1" type="button" value="차량 확인하기" onclick="javascript:location.href='/check'">
+
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%; margin-top: -7%; ">
+      <h3 class="w3-bar-item">Menu</h3>
+      <a href="/" class="w3-bar-item w3-button">HOME</a>
+      <a href="/newMemo" class="w3-bar-item w3-button">차량 등록</a>
+      <a href="/checks" class="w3-bar-item w3-button">차량 확인</a>
+      
+    </div>
+
+
+    <div class="title">등록된 차량</div>
+    <!-- <input class="check_btn" type="button" value="차량 등록하기" onclick="javascript:location.href='/newMemo'">
+    <input class="check_btn1" type="button" value="차량 확인하기" onclick="javascript:location.href='/checks'"> -->
     <table border='1'>
       <tr>
         <th>차량번호</th>
@@ -25,5 +37,7 @@
         </tr>
       <% }) %>
     </table>
+
+
   </body>
 </html>
