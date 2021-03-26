@@ -4,11 +4,22 @@
 
 <head>
     <title>update Memo Add</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/update.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-    <h1>update Memo Add</h1>
+
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%; margin-top: -7%; ">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="/" class="w3-bar-item w3-button">등록된 차량</a>
+        <a href="/newMemo" class="w3-bar-item w3-button">신규 차량 등록</a>
+        <a href="/checks" class="w3-bar-item w3-button">출입 차량 확인</a>
+        
+      </div>
+
+    <div class="title">수정하기</div>
     <% if(typeof errs !=="undefined" ) { %>
         <% errs.forEach((err)=>{%> <h4 style="color: red;">
                 <%=err.param%> : <%=err.msg%>
@@ -17,9 +28,9 @@
                 <% } %>
                     <form method="POST" action="/updateMemo"> 
                         <input type="hidden" name="id" value="<%=row.ID%>">
-                        <textarea name="content">
-                            <%=row.CONTENT%>
-                        </textarea> 
+                        <input style="resize: none; margin-left:43%" name="content">
+                           
+                        </input> 
                             <input type="submit" value="submit"> 
                             <input type="button" value="back" onclick="javascript:location.href='/'"> 
                     </form>

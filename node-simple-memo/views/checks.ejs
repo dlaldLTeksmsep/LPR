@@ -13,9 +13,9 @@
 
     <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%; margin-top: -7%; ">
         <h3 class="w3-bar-item">Menu</h3>
-        <a href="/" class="w3-bar-item w3-button">HOME</a>
-        <a href="/newMemo" class="w3-bar-item w3-button">차량 등록</a>
-        <a href="/checks" class="w3-bar-item w3-button">차량 확인</a>
+        <a href="/" class="w3-bar-item w3-button">등록된 차량</a>
+        <a href="/newMemo" class="w3-bar-item w3-button">신규 차량 등록</a>
+        <a href="/checks" class="w3-bar-item w3-button">출입 차량 확인</a>
         
     </div>
 
@@ -23,19 +23,19 @@
     <table border="1">
         <tr>
             <th>차량번호</th>
+            <th>등록</th>
             <th>차량등록여부</th>
             <th style="width:100px;">확인완료</th>
         </tr>
+        <% rows.forEach((row, index)=>{ %>
         <tr>
-            <td>78마 8125</td>
+            <td><%=row.CONTENT%></td>
+            <td><%=row.UPDATED_AT%></td>
             <td class="other" id="outside">외부등록차량</td>
             <td><input type="checkbox"></td>
         </tr>
-        <tr>
-            <td>78마 8125</td>
-            <td class="register">등록된 차량</td>
-            <td><input type="checkbox"></td>
-        </tr>
+        
+        <% }) %>
     </table>
 </body>
 

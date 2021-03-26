@@ -1,55 +1,3 @@
-// var express = require('express');
-// var router = express.Router();
-// const db = require('../db');
-// const {check, validationResult} = require('express-validator');
-
-// /* GET home page. */
-// router.get('/', function (req, res, next) {
-//   db.getAllMemos((rows) => {
-//     res.render('index', { rows: rows });
-//   });
-// });
-
-// router.get('/newMemo', function (req, res, next) {
-//   res.render('newMemo');
-// });
-
-// router.get('/checks', function (req, res, next) {
-//   res.render('checks');
-// });
-
-// router.get('/updateMemo', (req, res) => {
-//   let id = req.query.id;
-//   db.getMemoById(id, (row) => {
-//     if (typeof id === 'undefined' || row.length <= 0) {
-//       res.status(404).json({ error: 'undefined memo' });
-//     }
-//     else { res.render('updateMemo', { row: row[0] }); }
-//   });
-// });
-
-// router.post('/store', [check('content').isByteLength({ min: 1, max: 500 })], function (req, res, next) {
-//   let errs = validationResult(req);
-//   if (errs['errors'].length > 0) {
-//     res.render('newMemo', { errs: errs['errors'] });
-//   } else {
-//     let param = JSON.parse(JSON.stringify(req.body));
-//     db.insertMemo(param['content'], () => {
-//       res.redirect('/');
-//     });
-//   }
-// });
-
-// router.get('/deleteMemo', (req, res) => {
-//   let id = req.query.id; db.deleteMemoById(id, () => { res.redirect('/'); });
-// });
-
-
-
-
-// module.exports = router;
-
-
 var express = require('express');
 var router = express.Router();
 const {check, validationResult} = require('express-validator');
@@ -65,7 +13,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/checks', function (req, res, next) {
-  res.render('checks');
+  db.getAllMemos((rows) =>{
+    res.render('checks',{ rows: rows });
+  });
 });
 
 //page move
