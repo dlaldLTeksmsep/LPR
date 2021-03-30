@@ -27,12 +27,10 @@
             <% }) %>
                 <% } %>
                     <form method="POST" action="/updateMemo"> 
-                        <input type="hidden" name="id" value="<%=row.ID%>">
-                        <input style="resize: none; margin-left:43%" name="content">
-                           
-                        </input> 
-                            <input type="submit" value="submit"> 
-                            <input type="button" value="back" onclick="javascript:location.href='/'"> 
+                            <input type="hidden" name="id" value="<%=row.ID%>">
+                            <input class="input" style="resize: none; margin-left:40%" name="content">
+                            <input class="edit" type="submit" value="수정"> 
+                            <input class="back" type="button" value="돌아가기" onclick="javascript:location.href='/'"> 
                     </form>
 </body>
 

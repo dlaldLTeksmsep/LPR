@@ -12,3 +12,56 @@
 body{
     background-color: #F8F8F8;
 }
+
+
+.edit{
+    background-color: #BFBEBE;
+    border-radius: 5px;
+    color:#FFFFFF;
+    outline:0;
+    border:0;
+    width: 3.4%;
+    height:38px;
+    font-size: 15px;
+    font-weight: lighter;
+    display: table; 
+    margin-left: 46%; 
+    margin-top: 15px;
+    font-family: "NanumBarunGothic",serif; 
+}
+
+.edit:hover{
+
+    background-color: #18A0FB;
+}
+
+.back{
+    background-color: #BFBEBE;
+    border-radius: 5px;
+    color:#FFFFFF;
+    outline:0;
+    border:0;
+    width: 5%;
+    height:38px;
+    font-weight: lighter;
+    display: table; 
+    margin-left: 50%; 
+    margin-top: -37.5px;
+    font-family: "NanumBarunGothic",serif; 
+}
+
+.back:hover{
+
+    background-color: #18A0FB;
+}
+
+.input{
+    width:20%;
+    height:40px;
+    align-items: center;
+    align-content: center;
+    border:0.3px solid #000000;
+    display: table; 
+    margin-right: auto;
+    margin-top:7%;
+}
